@@ -14,5 +14,9 @@ class LogController extends Controller
         $this->logModel = $logModel;
     }
 
+    public function deneme(Request $request):object
+    {
+        return response()->json(['status'=>200,'msg'=>""],200,[],JSON_UNESCAPED_UNICODE);
+    }
 
 }
