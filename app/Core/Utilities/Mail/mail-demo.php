@@ -31,7 +31,7 @@ function Send($alici)
         $mail->Port = 587;
 
         // Set the sender's email address and name
-        $mail->setFrom('enescemcir94@gmail.com', 'Mailer');
+        $mail->setFrom('', 'Mailer');
 
         // Add a recipient
         $mail->addAddress($alici, 'Recipient Name');  // Dynamic recipient address
