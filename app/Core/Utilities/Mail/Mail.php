@@ -17,17 +17,17 @@ class Mail
     try {
         $mail->SMTPDebug = 0;
         $mail->isSMTP();
-        $mail->Host = 'mail.cumhuriyet.edu.tr';
+        $mail->Host = '';
         $mail->SMTPAuth = true;
-        $mail->Username = '2021304036@cumhuriyet.edu.tr';
-        $mail->Password = 'Enes.1907'; // Şifrenizi veya uygulama şifresini girin
+        $mail->Username = '';
+        $mail->Password = ''; // Şifrenizi veya uygulama şifresini girin
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
-        $mail->setFrom('2021304036@cumhuriyet.edu.tr', 'Mailer');
+        $mail->setFrom('', 'Mailer');
         $mail->addAddress($receiver, 'Receiver Name');
         $mail->isHTML(true);
-        $mail->Subject = 'DUGUN SALONU OTOMASYONU';
+        $mail->Subject = 'DENEME';
         $mail->Body = 'Yeni Password ' .$password;
         $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
