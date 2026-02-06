@@ -23,8 +23,8 @@ function Send($alici)
         $mail->SMTPAuth = true;
 
         // Gmail account credentials
-        $mail->Username = 'enescemcir94@gmail.com'; // Gmail address
-        $mail->Password = '12345678'; // Your Gmail App Password or actual Gmail password (if you have 2-step verification enabled, you need to use an app-specific password)
+        $mail->Username = ''; // Gmail address
+        $mail->Password = ''; // Your Gmail App Password or actual Gmail password (if you have 2-step verification enabled, you need to use an app-specific password)
 
         // Set email encryption to TLS (the most commonly used)
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
@@ -56,5 +56,5 @@ function Send($alici)
     }
 }
 
-Send('enescemcir1994@gmail.com');
+Send('');
 ?>
